@@ -17,3 +17,20 @@ top: 315px;
     left: 280px;
     top: 150px;
 }
+
+.patientBut
+{    position: absolute;
+    width: 341px;
+    height: 44px;
+    right: 320px;
+    top: 75px;
+}
+
+.sessionBut{
+    position: absolute;
+width: 341px;
+height: 44px;
+right: 100px;
+top: 75px;
+
+}

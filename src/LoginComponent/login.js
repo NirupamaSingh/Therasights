@@ -1,14 +1,14 @@
 import React from "react";
 import './login.css';
 import Word from "./word.svg";
-
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
         <body >
-            <img src={Word} alt="logo" className="logo" />
-            <div className="bgImg">
-                <form className="form">
+            <img src={Word} alt="logo" className="logoLog" />
+            <div className="bgImgLog">
+                <form className="formLog">
                     <div >
                         <label >Email Id</label> &nbsp;
                         <input type="text" className="input" size="40"></input>
@@ -16,8 +16,10 @@ const Login = () => {
                     <div >
                         <label >Password</label> &nbsp;
                         <input type="text" className="input" size="35" height="50px"></input>
-                    </div><br /><br />
-                    <button className="btn">Login</button>
+                    </div><br />
+                    <button className="btn">Login</button> <br /> <br /><br />
+                    <p className="signOp"> &nbsp;  &nbsp;  &nbsp; New Here? <Link to='/signup'>Signup now</Link></p>
+
                 </form>
             </div>
         </body>

@@ -1,13 +1,13 @@
-.logo{
+.logoSign{
     position: absolute;
-width: 150px;
+width: 210px;
 height: 87px;
 left: 260px;
 top: 60px;
 }
 
-.bgImg{
-    background-image: url('./box.svg');
+.bgImgSign{
+    background-image: url('./boxSign.svg');
     background-repeat: no-repeat;
     position: absolute;
     width: 1000px;
@@ -16,14 +16,18 @@ top: 60px;
     top: 150px;
 }
 
-.form{
+
+
+.formSign{
     position: absolute;
     left: 170px;
     top: 50px;
-    font-size: 40px;
+    font-size: 36px;
 }
 
-
+.logOp{
+    font-size: 30px;
+}
 .input{
     line-height: 30px;
     
