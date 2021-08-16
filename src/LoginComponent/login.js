@@ -17,7 +17,9 @@ const Login = () => {
                         <label >Password</label> &nbsp;
                         <input type="text" className="input" size="35" height="50px"></input>
                     </div><br />
-                    <button className="btn">Login</button> <br /> <br /><br />
+                    <Link to='/profile'>
+                        <button className="btn">Login</button>
+                    </Link> <br /> <br /><br />
                     <p className="signOp"> &nbsp;  &nbsp;  &nbsp; New Here? <Link to='/signup'>Signup now</Link></p>
 
                 </form>

@@ -3,6 +3,7 @@ import './profile.css';
 import ProfileLogo from './profileLogo.svg';
 import Dashboard from '../DashboardComponent/dashboard';
 import UserImg from './userImg.png';
+import { Link } from 'react-router-dom';
 
 const Profile = () => {
     return (
@@ -18,22 +19,24 @@ const Profile = () => {
                     </div> <br />
                     <div >
                         <label ><u>Gender</u> :</label> &nbsp;
-                       Female &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        Female &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                         <label> <u>DOB</u> :</label> &nbsp;
                         01-02-2000
                     </div><br />
                     <div >
                         <label ><u>Email</u> :</label> &nbsp;
                         nirupama15singh@gmail.com &nbsp; &nbsp; &nbsp;
-                        
+
                     </div> <br />
                     <div >
                         <label ><u>Mobile</u> :</label> 8377037966 &nbsp; &nbsp; &nbsp; &nbsp;
                         <label ><u>About Me</u> :</label> &nbsp;
-                       hi, i am a therapist &nbsp; &nbsp; &nbsp;
+                        hi, i am a therapist &nbsp; &nbsp; &nbsp;
 
                     </div> <br /><br /><br />
-                    <button className="btnP">Edit</button>
+                    <Link to='/editProfile'>
+                        <button className="btnP">Edit</button>
+                    </Link>
                 </form>
             </div>
         </div>

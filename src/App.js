@@ -9,6 +9,7 @@ import Profile from './ProfileComponent/profile';
 import Patient from './PatientComponent/patient';
 import Journal from './JournalComponent/journal';
 import AddPatient from './PatientComponent/AddPatientComponent/addPatient'
+import EditProfile from './ProfileComponent/EditProfileComponent/editProfile'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/patient" component={Patient}></Route>
           <Route path="/journal" component={Journal}></Route>
           <Route path="/addPatient" component={AddPatient}></Route>
+          <Route path="/editProfile" component={EditProfile}></Route>
         </Switch>
         <Navbar />
       </div>
