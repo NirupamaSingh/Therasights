@@ -1,5 +1,5 @@
 import React from "react";
-import './login.css';
+import './signup.css';
 import Word from "./word.svg";
 
 
@@ -16,8 +16,12 @@ const Login = () => {
                     <div >
                         <label >Password</label> &nbsp;
                         <input type="text" className="input" size="35" height="50px"></input>
-                    </div><br /><br />
-                    <button className="btn">Login</button>
+                    </div><br />
+                    <div >
+                        <label >Repeat <input type="text" className="input" size="35" height="50px"></input> <br /> Password</label> &nbsp;
+                        
+                    </div><br />
+                    <button className="btn">Sign Up</button>
                 </form>
             </div>
         </body>
