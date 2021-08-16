@@ -14,7 +14,10 @@ const Profile = () => {
             <Link to='/addPatient'>
                 <img src={PatientBut} alt="patientBut" className="patientBut" />
             </Link>
-            <img src={SessionBut} alt="sessionBut" className="sessionBut" />
+            <Link to='./createSession'>
+                <img src={SessionBut} alt="sessionBut" className="sessionBut" />
+            </Link>
+
 
             <div className="bgImgPat">
 
