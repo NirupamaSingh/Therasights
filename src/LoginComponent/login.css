@@ -6,13 +6,6 @@ left: 260px;
 top: 60px;
 }
 
-body{
-    background-color: #CCCEFF;
-    font-size: 40px;
-}
-
-
-
 .bgImg{
     background-image: url('./box.svg');
     background-repeat: no-repeat;
@@ -23,13 +16,11 @@ body{
     top: 150px;
 }
 
-
-
 .form{
     position: absolute;
     left: 170px;
     top: 50px;
-   
+    font-size: 40px;   
 }
 
 

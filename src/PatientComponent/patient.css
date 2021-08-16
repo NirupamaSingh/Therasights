@@ -1,0 +1,19 @@
+.patientLogo{
+    position: absolute;
+    width: 108px;
+    height: 110px;
+left: 76px;
+top: 315px;
+
+}
+
+
+.bgImgPat{
+    background-image: url('./patBox.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 280px;
+    top: 150px;
+}

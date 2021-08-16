@@ -5,7 +5,7 @@ import Word from "./word.svg";
 
 const Login = () => {
     return (
-        <body>
+        <body >
             <img src={Word} alt="logo" className="logo" />
             <div className="bgImg">
                 <form className="form">

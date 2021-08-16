@@ -10,9 +10,9 @@ const Navbar = () => {
                 <img className="imgIcon" src={icon} alt="icon"></img>
             </Link>
             <ul>
-                <li><a href="#about">Dashboard</a></li>
-                <li><a href="#projects">About Us</a></li>
-                <li><a href="#connect">Helpline No.</a></li>
+                <Link to="/profile"> <li>Profile</li> </Link>
+                <li>About Us</li>
+                <li>Helpline No.</li>
             </ul>
         </header>
     );
