@@ -1,0 +1,59 @@
+.one{
+    position: absolute;
+width: 386px;
+height: 500px;
+left: 70px;
+top: 360px;
+}
+
+.two{  
+    position: absolute;
+    width: 386px;
+    height: 500px;
+    left: 450px;
+    top: 360px;
+  
+}
+
+.three{  
+    position: absolute;
+    width: 386px;
+    height: 500px;
+    left: 830px;
+    top: 360px;
+  
+}
+/* 
+.nirupama{
+    border-radius: 50%;
+    position: absolute;
+    width: 386px;
+    height: 500px;
+    left: 950px;
+    top: 170px;
+    height: 150px;
+    width: 150px; 
+} */
+
+.aboutDetails{
+    position: absolute;
+    font-size:22px;
+    left: 50px;
+    top: 120px;
+}
+
+.heading{
+    position: absolute;
+    font-size:26px;
+    left: 50px;
+    top: 85px;
+    font-weight: 600;
+}
+
+.headingTeam{
+    position: absolute;
+    font-size:26px;
+    left: 50px;
+    top: 300px;
+    font-weight: 600;
+}

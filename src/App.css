@@ -23,3 +23,30 @@
     font-weight: 600;
     font-size: 24px;;
 }
+
+input {
+    border: none;
+    background-color: none;
+    outline: 0;
+    font-size: 25px;
+  }
+  
+  input:focus {
+    border: none;
+    background-color: none;
+    outline: 0;
+  }
+
+  
+input[type=date] {
+    border: none;
+    background-color: none;
+    outline: 0;
+    font-size: 21px;
+  }
+  
+  input[type=date]:focus {
+    border: none;
+    background-color: none;
+    outline: 0;
+  }

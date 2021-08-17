@@ -11,11 +11,11 @@ const Login = () => {
                 <form className="formLog">
                     <div >
                         <label >Email Id</label> &nbsp;
-                        <input type="text" className="input" size="40"></input>
+                        <input type="text" className="input" size="30"></input>
                     </div> <br />
                     <div >
                         <label >Password</label> &nbsp;
-                        <input type="text" className="input" size="35" height="50px"></input>
+                        <input type="text" className="input" size="28" height="50px"></input>
                     </div><br />
                     <Link to='/profile'>
                         <button className="btn">Login</button>

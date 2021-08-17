@@ -17,28 +17,28 @@ const EditProfile = () => {
                 <form className="formP">
                     <div className="setName">
                         <label>Name </label> &nbsp; &nbsp; &nbsp;
-                        <input type="text" className="inputTransparent" size="60" ></input>
+                        <input type="text"  size="40" ></input>
                     </div> <br />
                     <div className="setDOB">
                         <label>DOB </label> &nbsp; &nbsp; &nbsp;
-                        <input type="date" className="inputTransparent" size="20"></input>
+                        <input type="date" size="10"></input>
                         
 
                     </div><br />
                     <div className="setMob">
                         <label>Mobile </label> &nbsp; &nbsp; &nbsp;
-                        <input type="tel" className="inputTransparent" size="20"></input>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="tel"  size="15"></input>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                         <label>Gender </label> &nbsp; &nbsp; &nbsp;
-                        <input type="text" className="inputTransparent" size="10" ></input>
+                        <input type="text"  size="6" ></input>
                     </div> <br />
                     <div className="setEmail">
                         <label>Email </label> &nbsp; &nbsp; &nbsp; &nbsp;
-                        <input type="email" className="inputTransparent" size="60"></input>
+                        <input type="email"  size="40"></input>
                     </div> <br />
-                    <div className="setAdd">
-                        <label>About Me </label> &nbsp; &nbsp; &nbsp; &nbsp;
-                        <input type="test" className="inputTransparent" size="60"></input>
+                    <div className="setAbout">
+                        <label>About Me </label> &nbsp; &nbsp; &nbsp; 
+                        <input type="test"  size="38"></input>
                     </div> <br />
                     <div className="setBut">
                         <Link to='/profile'>

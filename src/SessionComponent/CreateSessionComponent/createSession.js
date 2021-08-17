@@ -14,15 +14,15 @@ const CreateSession = () => {
                 <form className="formP">
                     <div className="setNameC">
                         <label>Name </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <input type="text" className="inputTransparent" size="60" ></input>
+                        <input type="text"  size="38" ></input>
                     </div> <br />
                     <div className="setIDC">
                         <label>ID </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <input type="number" className="inputTransparent" size="60"></input>
+                        <input type="text"  size="37"></input>
                     </div><br />
                     <div className="setEmailC">
                         <label>Email </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <input type="email" className="inputTransparent" size="60"></input>
+                        <input type="email" size="37"></input>
                     </div> <br />
                     <img src={ButCreate} alt="logo" className="butCreate" />
                 </form>

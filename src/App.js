@@ -12,6 +12,9 @@ import Journal from './JournalComponent/journal';
 import AddPatient from './PatientComponent/AddPatientComponent/addPatient';
 import EditProfile from './ProfileComponent/EditProfileComponent/editProfile';
 import CreateSession from './SessionComponent/CreateSessionComponent/createSession';
+import AboutUs from './AboutUsComponent/aboutUs';
+import Helpline from './HelplineComponent/helpline';
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -29,6 +32,8 @@ function App() {
           <Route path="/addPatient" component={AddPatient}></Route>
           <Route path="/editProfile" component={EditProfile}></Route>
           <Route path="/createSession" component={CreateSession}></Route>
+          <Route path="/aboutUs" component={AboutUs}></Route>
+          <Route path="/helpline" component={Helpline}></Route>
         </Switch>
         <Navbar />
         <BackButton />

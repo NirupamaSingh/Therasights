@@ -95,16 +95,11 @@ top: 120px;
     font-weight: 600;
 }
 
-.setAdd{
+.setAbout{
     position: absolute;
     width: 1000px;
     height: 610px;
-    left: 280px;
+    left: 260px;
     top: 532px;
     font-weight: 600;
 }
-
-.inputTransparent{
-    opacity: 0.75;
-    
-}   
