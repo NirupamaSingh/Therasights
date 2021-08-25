@@ -1,0 +1,36 @@
+.linkBg{
+    position: absolute;
+width:600px;
+left: 330px;
+top: 100px;
+}
+
+.linkBox{
+    position: absolute;
+    left: 380px;
+    top: 180px;
+    width: 500px;
+}
+
+.copyButton{
+    position: absolute;
+    left: 530px;
+    top: 250px;
+    width: 250px;
+}
+
+.meetingButton{
+    position: absolute;
+    left: 505px;
+    top: 330px;
+    width: 250px;
+}
+
+.setLink{
+    position: absolute;
+    left: 395px;
+    top: 185px;
+    width: 500px;
+    font-weight: 600;
+    font-size: 26px;
+}

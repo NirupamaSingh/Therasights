@@ -39,7 +39,7 @@ const AddPatient = () => {
                     </div> <br />
                     <div className="setAdd">
                         <label>Address </label> &nbsp; &nbsp; &nbsp;
-                        <input type="test"  size="38"></input>
+                        <input type="text"  size="38"></input>
                     </div> <br />
                     <div className="setBut">
                         <Link to='/patient'>
