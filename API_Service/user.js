@@ -27,3 +27,20 @@ exports.getUserProfile = async (email)=>{
         return results;
     });
 }
+
+exports.editprofile = async (email, name, phno) => {
+    try{
+        console.log(name);
+        if(!name){
+            return "Please enter name";
+        }
+       
+        conn.query('UPDATE user SET name = ?  , phno = ? WHERE email = ?',[name,phno, email],async(error,results) => {
+            if(error)   console.log(error);
+            console.log(results);
+            return "Update successful";
+        })
+    }catch(error){
+        console.log(error);
+    }
+}
