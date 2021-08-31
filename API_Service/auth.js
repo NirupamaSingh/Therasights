@@ -17,38 +17,11 @@ var config =
 };
 const conn = new mysql.createConnection(config);
 
-exports.editprofile = async (req,res) => {
-    try{
-        const email = req.body.email;
-        const name = req.body.name;
-        const avatar = req.body.avatar;
-        const phno = req.body.phno;
-        
-        console.log(name);
-        if(!name){
-            return "Please enter name";
-        }
-       
-        conn.query('UPDATE user SET name = ? , avatar =  ?  , phno = ? WHERE email = ?',[name,avatar,phno, email],async(error,results) => {
-            if(error)   console.log(error);
-            console.log(results);
-            return "Update successful";
-        })
-    }catch(error){
-        console.log(error);
-    }
-}
 
-exports.login = async (req,res) => {
+exports.login = async (email, password) => {
     try{
-        
-        const email = req.body.email;
-        const password = req.body.password;
-        //console.log(username, password);
         if( !email || !password){
-            return res.status(400).render('login',{
-                message: 'Please provide email and password'
-            })
+            return "Provide email and password";
         }
         
         conn.query('SELECT * from user WHERE email = ?',[email],async(error,results) => {
@@ -61,23 +34,8 @@ exports.login = async (req,res) => {
                 if(!( bcrypt.compareSync(password,results[0].password))){
                     return  "Incorrect password" 
                 }else{
-                const email = results[0].email;
-                const token = jwt.sign({username: email},process.env.JWT_SECRET,{
-                    expiresIn: process.env.JWT_EXPIRES_IN
-                });
-
-                // console.log("token"+token);
-                const cookieOptions = {
-                    expires: new Date(
-                        Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
-                    ),
-                    httpOnly: true
+                    return "Login successful";
                 }
-
-                res.cookie('jwt',token,cookieOptions);
-            
-                return "Login successful";
-            }
             }
         })
     }catch(error){
@@ -85,33 +43,10 @@ exports.login = async (req,res) => {
     }
 }
 
-exports.isLoggedIn = (req, res, next) => {
-    // Check if the user has token in cookies. If not return the request;
-    if(!req.cookies.jwt) return res.json({ error: 'Please Login' });
 
-    const clientToken = req.cookies.jwt;
 
-    try {
-    //  Decode the client token by using same secret key that we used to sign the token
-        const decoded = jwt.verify(clientToken, process.env.JWT_SECRET);
-        req.user = decoded;
-        next();
-    }
-    catch(err){
-        return res.json({error: 'Invalid Token'})
-    }
+exports.register = async (email,name,phno,password,passwordConfirm) => {
 
-}
-
-exports.register = async (req,res) => {
-    console.log(req.body);
-
-    const email = req.body.email;
-    const name = req.body.name;
-    const avatar = req.body.avatar;
-    const phno = req.body.phno;
-    const password = req.body.password;
-    const passwordConfirm = req.body.passwordConfirm;
 
     function checkEMail(){
         conn.query('SELECT email from user WHERE email = ?',[email],(error,results) => {
@@ -128,16 +63,14 @@ exports.register = async (req,res) => {
     }
 
     if(password !== passwordConfirm){
-        return res.render('register',{
-            message: 'Passwords do not match'
-        })
+        return "Passwords do not match"
     }else{
         checkEMail();      
         var hashedpass = await registerUser();
         conn.query('INSERT INTO user SET ?',{
             name: name,
             email: email,
-            avatar: avatar,
+            avatar:'',
             phno: phno,
             password: hashedpass
         },(error,results)=>{
