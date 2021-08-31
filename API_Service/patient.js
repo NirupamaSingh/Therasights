@@ -40,3 +40,30 @@ exports.getPateint = async (client_email) =>{
         return results;
     });
 }
+
+exports.addPatient = async (user_email, client_email, name, phno) =>{
+    conn.query ("INSERT INTO client SET ?",{
+        email: client_email,
+        name: name,
+        phno: phno
+    },(error,results)=>{
+        if(error){
+            console.log('error');
+            return "error";
+        }else{
+            console.log(results);
+            conn.query("INSERT INTO consults SET ?",{
+                client_email: client_email,
+                user_email: user_email
+            },(error,results)=>{
+                if(error){
+                    console.log('error');
+                    return "error";
+                }else{
+                    console.log(results);
+                    return "Patient successfully added"; 
+                }    
+            });        
+        }
+    });
+}
