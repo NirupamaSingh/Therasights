@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
 const mysql = require('mysql');
-const jwt = require('jsonwebtoken');
+
 
 const dotenv  = require('dotenv');
 
@@ -17,7 +17,7 @@ var config =
 };
 const conn = new mysql.createConnection(config);
 
-exports.editprofile = async (req,res) => {
+exports.editprofile = async (req) => {
     try{
         const email = req.body.email;
         const name = req.body.name;
@@ -39,16 +39,14 @@ exports.editprofile = async (req,res) => {
     }
 }
 
-exports.login = async (req,res) => {
+exports.login = async (req) => {
     try{
         
         const email = req.body.email;
         const password = req.body.password;
         //console.log(username, password);
         if( !email || !password){
-            return res.status(400).render('login',{
-                message: 'Please provide email and password'
-            })
+            return "Enter email and password";
         }
         
         conn.query('SELECT * from user WHERE email = ?',[email],async(error,results) => {
@@ -61,20 +59,20 @@ exports.login = async (req,res) => {
                 if(!( bcrypt.compareSync(password,results[0].password))){
                     return  "Incorrect password" 
                 }else{
-                const email = results[0].email;
-                const token = jwt.sign({username: email},process.env.JWT_SECRET,{
-                    expiresIn: process.env.JWT_EXPIRES_IN
-                });
+                // const email = results[0].email;
+                // const token = jwt.sign({username: email},process.env.JWT_SECRET,{
+                //     expiresIn: process.env.JWT_EXPIRES_IN
+                // });
 
                 // console.log("token"+token);
-                const cookieOptions = {
-                    expires: new Date(
-                        Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
-                    ),
-                    httpOnly: true
-                }
+                // const cookieOptions = {
+                //     expires: new Date(
+                //         Date.now() + process.env.JWT_COOKIE_EXPIRES * 24 * 60 * 60 * 1000
+                //     ),
+                //     httpOnly: true
+                // }
 
-                res.cookie('jwt',token,cookieOptions);
+                // res.cookie('jwt',token,cookieOptions);
             
                 return "Login successful";
             }
@@ -85,25 +83,8 @@ exports.login = async (req,res) => {
     }
 }
 
-exports.isLoggedIn = (req, res, next) => {
-    // Check if the user has token in cookies. If not return the request;
-    if(!req.cookies.jwt) return res.json({ error: 'Please Login' });
 
-    const clientToken = req.cookies.jwt;
-
-    try {
-    //  Decode the client token by using same secret key that we used to sign the token
-        const decoded = jwt.verify(clientToken, process.env.JWT_SECRET);
-        req.user = decoded;
-        next();
-    }
-    catch(err){
-        return res.json({error: 'Invalid Token'})
-    }
-
-}
-
-exports.register = async (req,res) => {
+exports.register = async (req) => {
     console.log(req.body);
 
     const email = req.body.email;
@@ -128,9 +109,7 @@ exports.register = async (req,res) => {
     }
 
     if(password !== passwordConfirm){
-        return res.render('register',{
-            message: 'Passwords do not match'
-        })
+        return "Passwords do not match";
     }else{
         checkEMail();      
         var hashedpass = await registerUser();
