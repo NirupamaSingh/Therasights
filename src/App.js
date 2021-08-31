@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import BackButton from './back'
 import Navbar from './NavComponent/nav';
 import Home from './HomeComponent/home';
 import Login from './LoginComponent/login';
@@ -14,6 +13,9 @@ import EditProfile from './ProfileComponent/EditProfileComponent/editProfile';
 import CreateSession from './SessionComponent/CreateSessionComponent/createSession';
 import AboutUs from './AboutUsComponent/aboutUs';
 import Helpline from './HelplineComponent/helpline';
+import sessionLink from './SessionComponent/LinkComponent/sessionLink';
+import Session from './SessionComponent/session';
+import MSE from './MSEComponent/MSE';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -34,9 +36,11 @@ function App() {
           <Route path="/createSession" component={CreateSession}></Route>
           <Route path="/aboutUs" component={AboutUs}></Route>
           <Route path="/helpline" component={Helpline}></Route>
+          <Route path="/link" component={sessionLink}></Route>
+          <Route path="/session" component={Session}></Route>
+          <Route path="/mseForm" component={MSE}></Route>
         </Switch>
         <Navbar />
-        <BackButton />
       </div>
     </Router>
   );
