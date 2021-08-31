@@ -4,6 +4,7 @@ import Word from "./word.svg";
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+
     return (
         <body>
             <img src={Word} alt="logo" className="logoSign" />
