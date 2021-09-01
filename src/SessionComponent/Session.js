@@ -1,11 +1,15 @@
 import React from "react";
 import './session.css';
 
-const Session = () => {
+const Session = () => { 
 
     return (
         <>
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> frontend
         </>
     );
 };
