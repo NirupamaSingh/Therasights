@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from '../NavComponent/nav'
 import './aboutUs.css';
 import One from "./one.svg";
 import Two from "./two.svg";
@@ -9,6 +10,7 @@ import Simran from "./simran.jpeg";
 
 const AboutUS = () => {
     return (
+        <>
         <div className="font">  <p className="heading">What do we do?</p>
             <p className="aboutDetails">Therasights provides a platform that facilitates organization and analysis
                 of therapy <br /> sessions for mental health professionals. It consists of an inbuilt video
@@ -35,6 +37,8 @@ const AboutUS = () => {
                 <p>Nirupama Singh</p>
             </div>
         </div>
+        <Navbar/>
+        </>
     );
 }
 

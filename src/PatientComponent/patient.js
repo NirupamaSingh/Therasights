@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from '../NavComponent/nav'
 import './patient.css';
 import PatientLogo from './patientLogo.svg';
 import Dashboard from '../DashboardComponent/dashboard';
@@ -8,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Profile = () => {
     return (
+        <>
         <div>
             <Dashboard />
             <img src={PatientLogo} alt="patient" className="patientLogo" />
@@ -23,6 +25,8 @@ const Profile = () => {
 
             </div>
         </div>
+        <Navbar/>
+        </>
     );
 };
 

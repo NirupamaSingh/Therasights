@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from "../../NavComponent/nav";
 import './sessionLink.css';
 import CopyButton from './copyButton.svg';
 import LinkBg from './linkBg.svg';
@@ -22,7 +23,7 @@ const SessionLink = () => {
                 <label>Link </label> &nbsp; &nbsp;
                 <input type="text" size="28" ></input>
             </div>
-
+            <Navbar/>
         </>
     );
 };

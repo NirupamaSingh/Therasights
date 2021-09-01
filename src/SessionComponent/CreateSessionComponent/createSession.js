@@ -1,4 +1,6 @@
 import React from "react";
+import Navbar from '../../NavComponent/nav'
+
 import './createSession.css';
 import CreateLogo from './createLogo.svg';
 import ButCreate from './butCreate.svg';
@@ -30,6 +32,7 @@ const CreateSession = () => {
 
                 </form>
             </div>
+            <Navbar/>
         </body>
     );
 };

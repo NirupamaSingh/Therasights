@@ -1,4 +1,6 @@
 import React from "react";
+import Navbar from '../../NavComponent/nav'
+
 import './editProfile.css';
 
 import EditProLogo from './editProLogo.svg';
@@ -8,6 +10,7 @@ import EditBox from './boxEdit.svg'
 import { Link } from 'react-router-dom';
 const EditProfile = () => {
     return (
+        <>
         <div>
             <img src={EditProLogo} alt="logo" className="logoEditPro" />
             <img src={Sun} alt="logo" className="sun" />
@@ -48,6 +51,8 @@ const EditProfile = () => {
                 </form>
             </div>
         </div>
+        <Navbar/>
+        </>
     );
 };
 

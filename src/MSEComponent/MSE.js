@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from '../NavComponent/nav'
 import './MSE.css';
 import MseBg from "./MseBg.svg";
 import MseTopic from "./MseTopic.svg";
@@ -302,6 +303,7 @@ const MSE = () => {
                     </Link>
                 </div>
             </form>
+            <Navbar/>
         </>
     );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar from '../../NavComponent/nav'
 import './addPatient.css';
 import AddPatLogo from './addPatLogo.svg';
 import HotAir from './hotair.svg';
@@ -7,6 +8,7 @@ import AddBox from './boxAdd.svg'
 import { Link } from 'react-router-dom';
 const AddPatient = () => {
     return (
+        <>
         <div>
             <img src={AddPatLogo} alt="logo" className="logoAddPat" />
             <img src={Sun} alt="logo" className="sun" />
@@ -49,6 +51,8 @@ const AddPatient = () => {
                 </form>
             </div>
         </div>
+        <Navbar/>
+        </>
     );
 };
 

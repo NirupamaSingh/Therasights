@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Navbar from './NavComponent/nav';
+// import Navbar from './NavComponent/nav';
 import Home from './HomeComponent/home';
 import Login from './LoginComponent/login';
 import Signup from './SignupComponent/signup';
@@ -27,6 +27,7 @@ function App() {
           
           <Route path="/login" component={Login}></Route>
           <Route path="/signup" component={Signup}></Route>
+          {/* <Navbar /> */}
           <Route path="/dashboard" component={Dashboard}></Route>
           <Route path="/profile" component={Profile}></Route>
           <Route path="/patient" component={Patient}></Route>
@@ -42,7 +43,7 @@ function App() {
           
           <Route path="/" component={Home}></Route>
         </Switch>
-        <Navbar />
+        
       </div>
     </Router>
   );

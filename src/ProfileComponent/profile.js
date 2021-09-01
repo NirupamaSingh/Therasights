@@ -1,4 +1,6 @@
 import React from "react";
+import Navbar from '../NavComponent/nav'
+
 import './profile.css';
 import ProfileLogo from './profileLogo.svg';
 import Dashboard from '../DashboardComponent/dashboard';
@@ -7,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Profile = () => {
     return (
+        <>
         <div>
             <Dashboard />
             <img src={ProfileLogo} alt="profile" className="profileLogo" />
@@ -40,6 +43,8 @@ const Profile = () => {
                 </form>
             </div>
         </div>
+        <navbar/>
+        </>
     );
 };
 
