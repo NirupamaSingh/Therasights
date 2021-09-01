@@ -25,7 +25,7 @@ export default function NetworkQualityLevel({ qualityLevel }) {
           key={level}
           style={{
             height: `${STEP * (level + 1)}px`,
-            background: qualityLevel > level ? '#0c0' : '#040',
+            background: qualityLevel > level ? '#a3cef1' : '#7bdff2',
           }}
         />
       ))}

@@ -17,7 +17,7 @@ import config from '../../config';
 const useStyles = makeStyles((theme) =>
   createStyles({
     container: {
-      backgroundColor: theme.palette.background.default,
+      backgroundColor: '#1b4965'
     },
     toolbar: {
       [theme.breakpoints.down('xs')]: {
