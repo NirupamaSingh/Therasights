@@ -1,0 +1,42 @@
+.p{
+    position: absolute;
+width: 390px;
+height: 80px;
+left: 300px;
+top: 90px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 44px;
+line-height: 40px;
+color: black;
+
+
+}
+
+
+
+.profile{
+    position: absolute;
+width: 108px;
+height: 110px;
+left: 76px;
+top: 200px;
+}
+
+.patient{
+    position: absolute;
+width: 108px;
+height: 110px;
+left: 76px;
+top: 315px;
+}
+
+.journal{
+    position: absolute;
+width: 108px;
+height: 110px;
+left: 76px;
+top: 425px;
+}
+

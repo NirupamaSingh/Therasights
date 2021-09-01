@@ -1,0 +1,45 @@
+.logoSign{
+    position: absolute;
+width: 210px;
+height: 87px;
+left: 260px;
+top: 60px;
+}
+
+.bgImgSign{
+    background-image: url('./boxSign.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 280px;
+    top: 150px;
+}
+
+
+
+.formSign{
+    position: absolute;
+    left: 170px;
+    top: 50px;
+    font-size: 36px;
+}
+
+.logOp{
+    font-size: 30px;
+}
+.input{
+    line-height: 30px;
+    
+}
+
+.btn{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 110px;
+    height:50px;
+    width:200px;
+    font-size: 35px;
+}
+

@@ -1,0 +1,109 @@
+.font{
+    font-size: 24px;    
+}
+
+.one{
+    position: absolute;
+    width: 386px;
+    height: 500px;
+    left: 70px;
+    top: 360px;
+}
+
+.niharika{
+    border-radius: 50%;
+    position: absolute;
+    width: 386px;
+    height: 500px;
+    left: 190px;
+    top: 350px;
+    height: 150px;
+    width: 150px; 
+}
+
+.aboutNiharika{
+    position: absolute;
+    width: 380px;
+    top: 520px;
+    left: 190px;
+    font-weight: bold;
+}
+
+.two{  
+    position: absolute;
+    width: 386px;
+    height: 500px;
+    left: 450px;
+    top: 360px;  
+}
+
+.simran{
+    border-radius: 50%;
+    position: absolute;
+    width: 386px;
+    height: 500px;
+    left: 570px;
+    top: 350px;
+    height: 150px;
+    width: 150px; 
+}
+.aboutSimran{
+    position: absolute;
+    width: 380px;
+    top: 520px;
+    left: 560px;
+    font-weight: bold;
+}
+
+.three{  
+    position: absolute;
+    width: 386px;
+    height: 500px;
+    left: 830px;
+    top: 360px;
+}
+
+.nirupama{
+    border-radius: 50%;
+    position: absolute;
+    width: 386px;
+    height: 500px;
+    left: 950px;
+    top: 350px;
+    height: 150px;
+    width: 150px; 
+}
+
+
+.aboutNirupama{
+    position: absolute;
+    width: 380px;
+    top: 520px;
+    left: 940px;
+    font-weight: bold;
+}
+
+
+.aboutDetails{
+    position: absolute;
+    font-size:22px;
+    left: 50px;
+    top: 120px;
+}
+
+.heading{
+    position: absolute;
+    font-size:26px;
+    left: 50px;
+    top: 85px;
+    font-weight: 600;
+}
+
+.headingTeam{
+    position: absolute;
+    font-size:26px;
+    left: 50px;
+    top: 300px;
+    font-weight: 600;
+}
+

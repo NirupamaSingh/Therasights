@@ -1,0 +1,45 @@
+.profileLogo{
+    position: absolute;
+width: 108px;
+height: 110px;
+left: 76px;
+top: 200px;
+}
+
+.bgImgPro{
+    background-image: url('./proBox.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 280px;
+    top: 150px;
+}
+
+.userImg{
+    position: absolute;
+width: 150px;
+height: 150px;
+right: 170px;
+top: -50px;
+border-radius: 50%;
+}
+
+.formP{
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    font-size: 28px;   
+}
+
+
+
+.btnP{
+    color: white;
+    background-color: black;
+    position: absolute;
+    right: 100px;
+    height:50px;
+    width:180px;
+    font-size: 35px;
+}

@@ -1,0 +1,105 @@
+.logoAddPat{
+    position: absolute;
+    width: 360px;
+    height: 87px;
+    left: 150px;
+    top: 60px;
+}
+
+.hotair{
+    position: absolute;
+    width: 200px;
+    right: 0px;
+    top: 500px;
+}
+
+.sun{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 225px;
+    top: 140px;
+}
+
+.boxAdd{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 714px;
+height: 564px;
+left: 286px;
+top: 120px;
+}
+
+
+.formP{
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    font-size: 28px;   
+}
+
+.setBut{
+    position: absolute;    
+    left: 530px;
+    top: 602px;
+    font-weight: 600;
+    
+}
+
+.btnSave{
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 50px;
+    font-size: 36px;
+}
+
+.setName{
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 280px;
+    top: 140px;
+    font-weight: 600;
+    
+}
+
+.setDOB{
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 280px;
+    top: 238px;
+    font-weight: 600;
+}
+
+.setMob{
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 280px;
+    top: 336px;
+    font-weight: 600;
+}
+
+.setEmail{
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 280px;
+    top: 434px;
+    font-weight: 600;
+}
+
+.setAdd{
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 280px;
+    top: 532px;
+    font-weight: 600;
+}

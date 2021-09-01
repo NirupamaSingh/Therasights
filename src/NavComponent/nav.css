@@ -1,0 +1,49 @@
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 6px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF847C;    
+    font-size: 23px;
+}
+
+.imgIcon {
+    width: 45px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+
+
+
+.header .navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.header .a {
+    color: b;
+    text-decoration: none;
+    background-color: transparent;
+}

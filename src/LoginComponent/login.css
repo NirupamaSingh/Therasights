@@ -1,0 +1,44 @@
+.logoLog{
+    position: absolute;
+width: 150px;
+height: 87px;
+left: 260px;
+top: 60px;
+}
+
+.bgImgLog{
+    background-image: url('./boxLog.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 280px;
+    top: 150px;
+}
+
+.signOp{
+    font-size: 30px;
+}
+
+.formLog{
+    position: absolute;
+    left: 170px;
+    top: 50px;
+    font-size: 40px;   
+}
+
+
+.input{
+    line-height: 30px;
+    
+}
+
+.btn{
+    color: white;
+    background-color: black;
+    position: absolute;
+    left: 110px;
+    height:50px;
+    width:200px;
+    font-size: 35px;
+}

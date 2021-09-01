@@ -1,0 +1,67 @@
+.logoCreate{
+    position: absolute;
+    width: 320px;
+    height: 87px;
+    left: 150px;
+    top: 60px;
+}
+
+.bgImgCreate{
+    background-image: url('./bgCreate.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1500px;
+    height: 700px;
+    left: 220px;
+    top: 150px;
+}
+.dataBox{
+    position: absolute;
+width: 700px;
+height: 300px;
+left: 80px;
+top: 10px;
+}
+.butCreate{
+    position: absolute;
+width: 200px;
+height: 70px;
+left: 300px;
+top: 309px;
+}
+
+.formP{
+    position: absolute;
+    left: 40px;
+    top: 50px;
+    font-size: 28px;   
+}
+
+
+.setNameC{
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 70px;
+    top: 20px;
+    font-weight: 600;
+    
+}
+
+.setIDC{
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 100px;
+    top: 95px;
+    font-weight: 600;
+}
+
+.setEmailC{
+    position: absolute;
+    width: 1000px;
+    height: 610px;
+    left: 70px;
+    top: 170px;
+    font-weight: 600;
+}
