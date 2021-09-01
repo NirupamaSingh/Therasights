@@ -11,9 +11,9 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import {MuiThemeProvider} from '@material-ui/core/styles';
 import theme from "./theme";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
-import config from './config';
+// import config from './config';
 
-const basePath = config.appBasePath || "/session";
+const basePath =  "/session/";
 
 const VideoApp = () => {
     const {setError, settings} = useAppState();

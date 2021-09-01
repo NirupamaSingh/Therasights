@@ -26,7 +26,7 @@ const CreateSession = () => {
                         <label>Email </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                         <input type="email" size="37"></input>
                     </div> <br />
-                    <Link to="/link">
+                    <Link to="/session">
                         <img src={ButCreate} alt="logo" className="butCreate" />
                     </Link>
 

@@ -16,11 +16,11 @@ const Login = () => {
                     </div> <br />
                     <div >
                         <label >Password</label> &nbsp;
-                        <input type="text" className="input" size="28" height="50px"></input>
+                        <input type="password" className="input" size="28" height="50px"></input>
                     </div><br />
                     <div >
                         <label >Repeat   &nbsp;
-                            <input type="text" className="input" size="30" height="50px"></input>
+                            <input type="password" className="input" size="30" height="50px"></input>
                             <br /> Password</label> &nbsp;
 
                     </div> <br />

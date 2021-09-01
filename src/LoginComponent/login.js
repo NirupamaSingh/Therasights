@@ -15,7 +15,7 @@ const Login = () => {
                     </div> <br />
                     <div >
                         <label >Password</label> &nbsp;
-                        <input type="text" className="input" size="28" height="50px"></input>
+                        <input type="password" className="input" size="28" height="50px"></input>
                     </div><br />
                     <Link to='/profile'>
                         <button className="btn">Login</button>
