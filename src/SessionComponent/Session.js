@@ -5,11 +5,6 @@ const Session = () => {
 
     return (
         <>
-<<<<<<< HEAD
-
-=======
-            
->>>>>>> frontend
         </>
     );
 };
