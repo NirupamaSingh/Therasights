@@ -14,7 +14,7 @@ import CreateSession from './SessionComponent/CreateSessionComponent/createSessi
 import AboutUs from './AboutUsComponent/aboutUs';
 import Helpline from './HelplineComponent/helpline';
 import sessionLink from './SessionComponent/LinkComponent/sessionLink';
-import Session from './SessionComponent/session';
+import Session from './SessionComponent/Session';
 import MSE from './MSEComponent/MSE';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -24,7 +24,7 @@ function App() {
     <Router>
       <div>
         <Switch>
-
+          
           <Route path="/login" component={Login}></Route>
           <Route path="/signup" component={Signup}></Route>
           <Route path="/dashboard" component={Dashboard}></Route>
@@ -39,6 +39,7 @@ function App() {
           <Route path="/link" component={sessionLink}></Route>
           <Route path="/session" component={Session}></Route>
           <Route path="/mseForm" component={MSE}></Route>
+          
           <Route path="/" component={Home}></Route>
         </Switch>
         <Navbar />
